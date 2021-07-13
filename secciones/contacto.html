@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/styles.css">
+    <link rel="icon" type="image/png" href="/imagenes/favicon.png"/>
+    <title>Mica Bianchi - Contacto</title>
+</head>
+
+<body class="container-fluid">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="contacto_main">
+        <div>
+            <h1>Contacto</h1>
+            <p><em>¡MANOS A LA OBRA!</em></p>
+            <div>
+                <div>
+                    <img src="#" alt="imagen de chat">
+                </div>
+                <div>
+                    <p><b>Escribime y empecemos a trabajar en conjunto.</b></p>
+                    <p>Si te gustaría agendar para alguna de mis consultorías, completá el formulario que encontrás aquí
+                        debajo. Me pondré en contacto con vos lo antes posible.</p>
+                    <p><b>¡GRACIAS!</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <form action="" class="col-md-4">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="marca" class="form-label">Nombre de tu marca</label>
+                    <input type="text" class="form-control" id="marca" name="marca">
+                </div>
+                <div class="mb-3">
+                    <label for="web_marca" class="form-label">Instagram o web de tu marca</label>
+                    <input type="text" class="form-control" id="web_marca" name="web_marca">
+                </div>
+                <div class="mb-3">
+                    <label for="residencia" class="form-label">¿De dónde sos?</label>
+                    <input type="text" class="form-control" id="residencia" name="residencia">
+                </div>
+                <div class="mb-3">
+                    <label for="conocimiento" class="form-label">¿Cómo me conociste?</label>
+                    <input type="text" class="form-control" id="conocimiento" name="conocimiento">
+                </div>
+                <div class="mb-3">
+                    <label for="consultoria" class="form-label">¿Para qué consultoría te gustaría agendar?</label>
+                    <select class="form-select" aria-label="Default select example" name="consultoria">
+                        <option value="bases">Definiendo las bases de tu negocio</option>
+                        <option value="redes">Contenido para redes que conecta</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Dejá acá tu consulta y fechas y horarios disponibles, en el caso de que estés agendando para una consultoría :)</label>
+                    <textarea class="form-control" id="consulta" name="consulta"></textarea>                    
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <h2>¡No te olvides de suscribirte al newsletter!</h2>
+          <form action="" method="post" id="form_newsletter">
+            <input type="email" id="email" name="email" placeholder="Ingresa tu mail">
+          </form>
+          <button class="btn btn-success" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
+        </div>
+        <div class="d-flex justify-content-around align-items-center">
+          <img src="https://place-hold.it/200x200" class="img-fluid" alt="">
+          <div class="d-flex flex-column align-items-end">
+            <a href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid" src="https://place-hold.it/40x40" alt="icono_instagram"></a>
+            <a href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid" src="https://place-hold.it/40x40" alt="icono_email"></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
