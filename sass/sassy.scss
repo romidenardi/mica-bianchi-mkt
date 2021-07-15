@@ -2,7 +2,35 @@
 
 @import "colores-y-fuentes";
 
+
+// Reseteo
+
+* {
+    margin:0;
+    padding:0;
+    line-height:1.2;
+}
+
+// Estilos de fuente
+
 h1 {
-    color: $verde;
     font-family: $titulo;
+}
+
+h2 {
+    font-family: $titulo;
+}
+
+h3 {
+    font-family: $titulo;
+}
+
+p {
+    font-family: $copy;
+}
+
+// Box Modelling + Fondos
+
+h1, h2, h3, p {
+    margin: 20px;
 }

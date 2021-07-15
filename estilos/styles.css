@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; }
+
 h1 {
-  color: #3C5946;
   font-family: "Berkshire Swash", cursive; }
+
+h2 {
+  font-family: "Berkshire Swash", cursive; }
+
+h3 {
+  font-family: "Berkshire Swash", cursive; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+h1, h2, h3, p {
+  margin: 20px; }
