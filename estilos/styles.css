@@ -17,3 +17,45 @@ p {
 
 h1, h2, h3, p {
   margin: 20px; }
+
+.index_branding__foto {
+  position: relative; }
+
+.index_branding__contenido {
+  display: block;
+  position: absolute; }
+
+.index_about_quienSoy__imagen--fondo {
+  position: relative; }
+
+.index_about_quienSoy__imagen--foto {
+  display: block;
+  position: absolute; }
+
+@media (min-width: 481px) {
+  .index_body {
+    display: grid;
+    grid-template-areas: "sticky-top" "index_branding" "index_about_quienSoy" "index_about_pilares" "index_about_proposito" "index_ultimosPosts" "footer";
+    grid-template-columns: 100%; }
+  .sticky-top {
+    grid-area: sticky-top; }
+  .index_branding {
+    grid-area: index_branding; }
+  .index_about_quienSoy {
+    grid-area: index_about_quienSoy;
+    display: grid;
+    grid-template-areas: "index_about_quienSoy__titulo" "index_about_quienSoy__copy" "index_about_quienSoy__imagen"; }
+    .index_about_quienSoy__titulo {
+      grid-area: index_about_quienSoy__titulo; }
+    .index_about_quienSoy__copy {
+      grid-area: index_about_quienSoy__copy; }
+    .index_about_quienSoy__imagen {
+      grid-area: index_about_quienSoy__imagen; }
+  .index_about_pilares {
+    grid-area: index_about_pilares; }
+  .index_about_proposito {
+    grid-area: index_about_proposito; }
+  .index_ultimosPosts {
+    grid-area: index_ultimosPosts; }
+  .footer {
+    grid-area: footer; } }

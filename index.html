@@ -14,7 +14,7 @@
   <title>Mica Bianchi - Inicio</title>
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid index_body">
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -36,65 +36,74 @@
     </nav>
   </header>
 
-  <section id="index_branding" class="d-flex flex-column justify-content-center align-items-center text-center">
-    <img class="img-fluid" src= "./imagenes/micabianchi05.jpg" alt="Mica - Index">
-    <div>
-      <img class="img-fluid" id="branding_img" src="/imagenes/branding.png" alt="">
-      <h1>Mica Bianchi</h1>
+  <section class="d-flex flex-column justify-content-center align-items-center text-center index_branding">
+    <div class= index_branding__foto>
+      <img class="img-fluid" src= "./imagenes/micabianchi05.jpg" alt="Mica - Index">
+    </div>
+    <div class= index_branding__contenido>
+      <img class="img-fluid" src="./imagenes/marca.png" alt="Mica Bianchi">
       <p>Te ayudo a crecer tu marca en el mundo digital, centrado en el impacto positivo de tu negocio.</p>
     </div>
   </section>
 
-  <section id="index_about">
-    <article id="index_about_quienSoy">
+  <section class="index_about_quienSoy">
+    <div class="index_about_quienSoy__titulo">
       <h2>¿Quién soy?</h2>
+    </div>
+    <div class="index_about_quienSoy__copy">
       <p><strong>Mi nombre es <em>MICA BIANCHI</em></strong></p>
-      <p>Soy Lic. en Relaciones Públicas y fanática del Marketing de Contenidos. Trabajo en el mundo del Marketing
-        Digital hace más de 3 años, creando estrategias en redes sociales y generando contenido enfocado en conectar con
-        la comunidad, para vender más, desde tu porqué.</p>
-      <div class="d-flex justify-content-end">
+      <p>Soy Lic. en Relaciones Públicas y fanática del Marketing de Contenidos. Trabajo en el mundo del Marketing Digital hace más de 3 años, creando estrategias en redes sociales y generando contenido enfocado en conectar con la comunidad, para vender más, desde tu porqué.</p>
+    </div>
+    <div class="index_about_quienSoy__imagen">
+      <div class="d-flex justify-content-end index_about_quienSoy__imagen--foto">
         <img class="img-fluid" src="./imagenes/micabianchi06.jpg" alt="Mica - Quién soy">
       </div>
-      <div class="d-flex justify-content-end">
-        <img src="./imagenes/circulos.png" class="img-fluid" alt="Círculos verdes">
+      <div class="index_about_quienSoy__imagen--fondo">
+        <img class="img-fluid" src="./imagenes/circulos.png" alt="Círculos verdes">
       </div>
-    </article>
-    <article id="index_about_pilares" class="d-flex justify-content-around">
-      <img src="./imagenes/grafico.png" class="img-fluid" alt="Gráfico">
-      <div>
-        <h2>¿Cuáles son mis pilares?</h2>
-        <p>Trabajamos en las diferentes etapas de tu emprendimiento, para que puedas crecer sobre bases sólidas,
-          entender hacia dónde querés ir, cómo podés crear una comunidad, y empezar a vender más.</p>
-        <a class="btn btn-primary" href="secciones/servicios.html" role="button">¡Quiero empezar!</a>
-      </div>
-    </article>
-    <article id="index_about_proposito">
-      <div class="d-flex justify-content-start">
-        <img class="img-fluid" src= "./imagenes/micabianchi05.jpg" alt="Mica - Propósito">
-      </div>
-      <div>
-        <h2>Mi propósito</h2>
-        <p>Creé mi marca personal, porque quiero ayudar a emprendedores, que quieren dejar un impacto positivo en el
-          mundo, a crecer y posicionar su marca en el mundo digital.</p>
-        <h3>¿Cómo?</h3>
-        <p>Compartiéndote todo lo que sé en comunicación y marketing, para que puedas trabajar desde tu porqué,
-          plantearte objetivos, conocer mejor a tu cliente ideal, crecer en todos los canales digitales, y animarte a
-          dedicarte de lleno a tu emprendimiento.</p>
-      </div>
-      <div class="d-flex justify-content-end">
-        <img class="img-fluid" src="./imagenes/smartphone.png" alt="Happy World">
-      </div>
-    </article>
+    </div>
   </section>
 
-  <section id="index_ultimosPosts" class="d-flex flex-column justify-content-center align-items-center text-center">
+  <section class="d-flex justify-content-around index_about_pilares">
+    <div>
+      <img src="./imagenes/grafico.png" class="img-fluid" alt="Gráfico">
+    </div>
+    <div>
+      <h2>¿Cuáles son mis pilares?</h2>
+    </div>
+    <div>
+      <p>Trabajamos en las diferentes etapas de tu emprendimiento, para que puedas crecer sobre bases sólidas, entender hacia dónde querés ir, cómo podés crear una comunidad, y empezar a vender más.</p>
+    </div>
+    <div>
+      <a class="btn btn-primary" href="secciones/servicios.html" role="button">¡Quiero empezar!</a>
+    </div>
+  </section>
+
+  <section class="index_about_proposito">
+    <div class="d-flex justify-content-start">
+        <img class="img-fluid" src= "./imagenes/micabianchi05.jpg" alt="Mica - Propósito">
+    </div>
+    <div>
+      <h2>Mi propósito</h2>
+    </div>
+    <div>
+      <p>Creé mi marca personal, porque quiero ayudar a emprendedores, que quieren dejar un impacto positivo en el mundo, a crecer y posicionar su marca en el mundo digital.</p>
+      <h3>¿Cómo?</h3>
+      <p>Compartiéndote todo lo que sé en comunicación y marketing, para que puedas trabajar desde tu porqué, plantearte objetivos, conocer mejor a tu cliente ideal, crecer en todos los canales digitales, y animarte a dedicarte de lleno a tu emprendimiento.</p>
+    </div>
+    <div class="d-flex justify-content-end">
+      <img class="img-fluid" src="./imagenes/smartphone.png" alt="Happy World">
+    </div>
+    </section>
+
+  <section class="d-flex flex-column justify-content-center align-items-center text-center index_ultimosPosts">
     <h2>Últimos posts</h2>
     <!--Agregar iframes a Instagram posts-->
     <p><em>SEGUIME EN INSTAGRAM <a href="https://www.instagram.com/micabianchii/" target="blank">@micabianchii</a></em>
     </p>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="d-flex flex-column justify-content-center align-items-center text-center">
       <h2>¡No te olvides de suscribirte al newsletter!</h2>
       <form action="" method="post" id="form_newsletter">
