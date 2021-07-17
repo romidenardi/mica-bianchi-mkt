@@ -19,17 +19,11 @@ h1, h2, h3, p {
   margin: 20px; }
 
 .index_branding__foto {
-  position: relative; }
+  position: relative;
+  display: block;
+  float: left; }
 
 .index_branding__contenido {
-  display: block;
-  position: absolute; }
-
-.index_about_quienSoy__imagen--fondo {
-  position: relative; }
-
-.index_about_quienSoy__imagen--foto {
-  display: block;
   position: absolute; }
 
 @media (min-width: 481px) {
@@ -44,7 +38,8 @@ h1, h2, h3, p {
   .index_about_quienSoy {
     grid-area: index_about_quienSoy;
     display: grid;
-    grid-template-areas: "index_about_quienSoy__titulo" "index_about_quienSoy__copy" "index_about_quienSoy__imagen"; }
+    grid-template-areas: "index_about_quienSoy__titulo" "index_about_quienSoy__copy" "index_about_quienSoy__imagen";
+    grid-template-columns: 100%; }
     .index_about_quienSoy__titulo {
       grid-area: index_about_quienSoy__titulo; }
     .index_about_quienSoy__copy {
@@ -52,9 +47,31 @@ h1, h2, h3, p {
     .index_about_quienSoy__imagen {
       grid-area: index_about_quienSoy__imagen; }
   .index_about_pilares {
-    grid-area: index_about_pilares; }
+    grid-area: index_about_pilares;
+    display: grid;
+    grid-template-areas: "index_about_pilares__grafico index_about_pilares__titulo" "index_about_pilares__grafico index_about_pilares__copy";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 80%; }
+    .index_about_pilares__titulo {
+      grid-area: index_about_pilares__titulo; }
+    .index_about_pilares__copy {
+      grid-area: index_about_pilares__copy; }
+    .index_about_pilares__grafico {
+      grid-area: index_about_pilares__grafico; }
   .index_about_proposito {
-    grid-area: index_about_proposito; }
+    grid-area: index_about_proposito;
+    grid-area: index_about_pilares;
+    display: grid;
+    grid-template-areas: "index_about_proposito__imagen index_about_proposito__imagen" "index_about_proposito__titulo index_about_proposito__titulo" "index_about_proposito__copy index_about_proposito__copy" "none index_about_proposito__ilustracion";
+    grid-template-columns: 70% 30%; }
+    .index_about_proposito__titulo {
+      grid-area: index_about_proposito__titulo; }
+    .index_about_proposito__copy {
+      grid-area: index_about_proposito__copy; }
+    .index_about_proposito__imagen {
+      grid-area: index_about_proposito__imagen; }
+    .index_about_proposito__ilustracion {
+      grid-area: index_about_proposito__ilustracion; }
   .index_ultimosPosts {
     grid-area: index_ultimosPosts; }
   .footer {

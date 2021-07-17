@@ -14,19 +14,19 @@
 // Estilos de fuente
 
 h1 {
-    font-family: $titulo;
+    font-family:$titulo;
 }
 
 h2 {
-    font-family: $titulo;
+    font-family:$titulo;
 }
 
 h3 {
-    font-family: $titulo;
+    font-family:$titulo;
 }
 
 p {
-    font-family: $copy;
+    font-family:$copy;
 }
 
 // Box Modelling + Fondos
@@ -41,22 +41,11 @@ h1, h2, h3, p {
 
     &__foto {
         position:relative;
+        display:block;
+        float:left;
     }
 
     &__contenido {
-        display:block;
-        position:absolute;
-    }
-}
-
-.index_about_quienSoy__imagen {
-
-    &--fondo {
-        position:relative;
-    }
-
-    &--foto {
-        display:block;
         position:absolute;
     }
 }
@@ -100,6 +89,7 @@ h1, h2, h3, p {
         "index_about_quienSoy__titulo"
         "index_about_quienSoy__copy"
         "index_about_quienSoy__imagen";
+        grid-template-columns:100%;
 
         &__titulo {
             grid-area:index_about_quienSoy__titulo;
@@ -112,16 +102,56 @@ h1, h2, h3, p {
         &__imagen {
             grid-area:index_about_quienSoy__imagen;
         }
-
-
     }
 
     .index_about_pilares {
         grid-area:index_about_pilares;
+        display:grid;
+        grid-template-areas:
+        "index_about_pilares__grafico index_about_pilares__titulo"
+        "index_about_pilares__grafico index_about_pilares__copy";
+        grid-template-columns:30% 70%;
+        grid-template-rows:20% 80%;
+                
+        &__titulo {
+            grid-area:index_about_pilares__titulo;
+        }
+
+        &__copy {
+            grid-area:index_about_pilares__copy;
+        }
+
+        &__grafico {
+            grid-area:index_about_pilares__grafico;
+        }
     }
 
     .index_about_proposito {
         grid-area:index_about_proposito;
+        grid-area:index_about_pilares;
+        display:grid;
+        grid-template-areas:
+        "index_about_proposito__imagen index_about_proposito__imagen"
+        "index_about_proposito__titulo index_about_proposito__titulo"
+        "index_about_proposito__copy index_about_proposito__copy"
+        "none index_about_proposito__ilustracion";
+        grid-template-columns:70% 30%;
+
+        &__titulo {
+            grid-area:index_about_proposito__titulo;
+        }
+
+        &__copy {
+            grid-area:index_about_proposito__copy;
+        }
+
+        &__imagen {
+            grid-area:index_about_proposito__imagen;
+        }
+
+        &__ilustracion {
+            grid-area:index_about_proposito__ilustracion;
+        }
     }
 
     .index_ultimosPosts {
@@ -129,7 +159,6 @@ h1, h2, h3, p {
     }
 
     .footer {
-        grid-area:footer    ;
+        grid-area:footer;
     }
-
 }
