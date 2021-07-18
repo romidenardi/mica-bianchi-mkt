@@ -26,6 +26,55 @@ h1, h2, h3, p {
 .index_branding__contenido {
   position: absolute; }
 
+@media (max-width: 480px) {
+  .index_body {
+    display: grid;
+    grid-template-areas: "sticky-top" "index_branding" "index_about_quienSoy" "index_about_pilares" "index_about_proposito" "index_ultimosPosts" "footer";
+    grid-template-columns: 100%; }
+  .sticky-top {
+    grid-area: sticky-top; }
+  .index_branding {
+    grid-area: index_branding; }
+  .index_about_quienSoy {
+    grid-area: index_about_quienSoy;
+    display: grid;
+    grid-template-areas: "index_about_quienSoy__titulo" "index_about_quienSoy__imagen" "index_about_quienSoy__copy";
+    grid-template-columns: 100%; }
+    .index_about_quienSoy__titulo {
+      grid-area: index_about_quienSoy__titulo; }
+    .index_about_quienSoy__copy {
+      grid-area: index_about_quienSoy__copy; }
+    .index_about_quienSoy__imagen {
+      grid-area: index_about_quienSoy__imagen; }
+  .index_about_pilares {
+    grid-area: index_about_pilares;
+    display: grid;
+    grid-template-areas: "index_about_pilares__titulo index_about_pilares__titulo" "index_about_pilares__grafico index_about_pilares__copy";
+    grid-template-columns: 40% 60%; }
+    .index_about_pilares__titulo {
+      grid-area: index_about_pilares__titulo; }
+    .index_about_pilares__copy {
+      grid-area: index_about_pilares__copy; }
+    .index_about_pilares__grafico {
+      grid-area: index_about_pilares__grafico; }
+  .index_about_proposito {
+    grid-area: index_about_proposito;
+    display: grid;
+    grid-template-areas: "index_about_proposito__imagen index_about_proposito__imagen" "index_about_proposito__titulo index_about_proposito__titulo" "index_about_proposito__copy index_about_proposito__copy" "none index_about_proposito__ilustracion";
+    grid-template-columns: 60% 40%; }
+    .index_about_proposito__titulo {
+      grid-area: index_about_proposito__titulo; }
+    .index_about_proposito__copy {
+      grid-area: index_about_proposito__copy; }
+    .index_about_proposito__imagen {
+      grid-area: index_about_proposito__imagen; }
+    .index_about_proposito__ilustracion {
+      grid-area: index_about_proposito__ilustracion; }
+  .index_ultimosPosts {
+    grid-area: index_ultimosPosts; }
+  .footer {
+    grid-area: footer; } }
+
 @media (min-width: 481px) {
   .index_body {
     display: grid;
@@ -60,7 +109,6 @@ h1, h2, h3, p {
       grid-area: index_about_pilares__grafico; }
   .index_about_proposito {
     grid-area: index_about_proposito;
-    grid-area: index_about_pilares;
     display: grid;
     grid-template-areas: "index_about_proposito__imagen index_about_proposito__imagen" "index_about_proposito__titulo index_about_proposito__titulo" "index_about_proposito__copy index_about_proposito__copy" "none index_about_proposito__ilustracion";
     grid-template-columns: 70% 30%; }
