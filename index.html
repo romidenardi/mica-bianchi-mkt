@@ -14,7 +14,7 @@
   <title>Mica Bianchi - Inicio</title>
 </head>
 
-<body class="container-fluid index_body">
+<body class="index_body">
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -37,7 +37,17 @@
   </header>
 
   <section class="index_branding">
-    <img class="img-fluid index_branding__foto" src= "./imagenes/micabianchi01.jpg" alt="Mica - Index">
+    
+
+    <picture>
+      <source media="(max-width:480px)" srcset="./imagenes/micabianchi01-mob.jpg"  class="img-fluid index_branding__foto" alt="Mica - Index">
+      <source media="(min-width:481px)" srcset="./imagenes/micabianchi01.jpg"  class="img-fluid index_branding__foto" alt="Mica - Index">
+      <img class="img-fluid index_branding__foto" src="./imagenes/micabianchi01.jpg" alt="Mica - Index">
+    </picture>
+
+
+
+
     <div class= index_branding__contenido>
       <img class="img-fluid" src="./imagenes/marca.png" alt="Mica Bianchi">
       <p>Te ayudo a crecer tu marca en el mundo digital, centrado en el impacto positivo de tu negocio.</p>
@@ -96,16 +106,16 @@
   </section>
 
   <footer class="footer">
-    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="footer__newsletter">
       <h2>¡No te olvides de suscribirte al newsletter!</h2>
       <form action="" method="post" id="form_newsletter">
-        <input type="email" id="email" name="email" placeholder="Ingresa tu mail">
+        <input type="email" id="email" name="email" placeholder="Ingresá tu mail">
       </form>
       <button class="btn btn-success" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
     </div>
-    <div class="d-flex justify-content-around align-items-center">
-      <img class="img-fluid" src="./imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
-      <div class="d-flex flex-column align-items-end">
+    <div class="footer__datos">
+      <img class="img-fluid footer__datos--logo" src="./imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
+      <div class="footer__datos--contacto">
         <a href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid"
             src="./imagenes/instagram.png" alt="icono_instagram"></a>
         <a href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid"

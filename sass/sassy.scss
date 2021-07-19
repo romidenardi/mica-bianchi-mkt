@@ -32,7 +32,7 @@ p {
 // Box Modelling + Fondos
 
 h1, h2, h3, p {
-    margin: 20px;
+    margin:20px;
 }
 
 // Superposición de imágenes
@@ -75,14 +75,19 @@ h1, h2, h3, p {
 
     .index_branding {
         grid-area:index_branding;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
     }
 
     .index_about_quienSoy {
         grid-area:index_about_quienSoy;
         display:grid;
         grid-template-areas:
-        "index_about_quienSoy__titulo"
         "index_about_quienSoy__imagen"
+        "index_about_quienSoy__titulo"
         "index_about_quienSoy__copy";
         grid-template-columns:100%;
 
@@ -153,6 +158,23 @@ h1, h2, h3, p {
 
     .footer {
         grid-area:footer;
+        display:grid;
+        grid-template-areas:
+        "footer__newsletter"
+        "footer__datos";
+        grid-template-columns:100%;
+
+        &__newsletter {
+            grid-area:footer__newsletter;
+        }
+
+        &__datos {
+            grid-area:footer__datos;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:space-around;
+        }   align-items:center;
     }
 }
 
@@ -256,5 +278,23 @@ h1, h2, h3, p {
 
     .footer {
         grid-area:footer;
+        display:grid;
+        grid-template-areas:
+        "footer__newsletter"
+        "footer__datos";
+        grid-template-columns:100%;
+        
+        &__newsletter {
+            grid-area:footer__newsletter;
+        }
+
+        &__datos {
+            grid-area:footer__datos;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:space-around;
+            align-items:center;
+        }
     }
 }
