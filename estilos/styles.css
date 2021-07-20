@@ -3,16 +3,10 @@
   padding: 0;
   line-height: 1.2; }
 
-h1 {
+h1, h2, h3 {
   font-family: "Berkshire Swash", cursive; }
 
-h2 {
-  font-family: "Berkshire Swash", cursive; }
-
-h3 {
-  font-family: "Berkshire Swash", cursive; }
-
-p {
+p, ul li {
   font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, p {
@@ -153,3 +147,165 @@ h1, h2, h3, p {
       flex-wrap: nowrap;
       justify-content: space-around;
       align-items: center; } }
+
+@media (max-width: 480px) {
+  .servicios_body {
+    display: grid;
+    grid-template-areas: "servicios_sticky-top" "servicios_inicio" "servicios_bajada" "servicios_agenda" "servicios_bases" "servicios_redes" "servicios_footer";
+    grid-template-columns: 100%; }
+  .servicios_sticky-top {
+    grid-area: servicios_sticky-top; }
+  .servicios_inicio {
+    grid-area: servicios_inicio;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+  .servicios_bajada {
+    grid-area: servicios_bajada; }
+  .servicios_agenda {
+    grid-area: servicios_agenda;
+    display: grid;
+    grid-template-areas: "servicios_agenda__foto" "servicios_agenda__titulo" "servicios_agenda__copy";
+    grid-template-columns: 100%; }
+    .servicios_agenda__foto {
+      grid-area: servicios_agenda__foto; }
+    .servicios_agenda__titulo {
+      grid-area: servicios_agenda__titulo; }
+    .servicios_agenda__copy {
+      grid-area: servicios_agenda__copy;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
+  .servicios_bases {
+    grid-area: servicios_bases;
+    display: grid;
+    grid-template-areas: "servicios_bases__titulo" "servicios_bases__copy" "servicios_bases__pasos" "servicios_bases__perfecta" "servicios_bases__incluye" "servicios_bases__boton";
+    grid-template-columns: 100%; }
+    .servicios_bases__titulo {
+      grid-area: servicios_servicios_bases__titulo; }
+    .servicios_bases__copy {
+      grid-area: servicios_bases__copy; }
+    .servicios_bases__pasos {
+      grid-area: servicios_bases__pasos; }
+    .servicios_bases__perfecta {
+      grid-area: servicios_bases__perfecta; }
+    .servicios_bases__incluye {
+      grid-area: servicios_bases__incluye; }
+    .servicios_bases__boton {
+      grid-area: servicios_bases__boton; }
+  .servicios_redes {
+    grid-area: servicios_redes;
+    display: grid;
+    grid-template-areas: "servicios_redes__titulo" "servicios_redes__copy" "servicios_redes__pasos" "servicios_redes__perfecta" "servicios_redes__incluye" "servicios_redes__boton";
+    grid-template-columns: 100%; }
+    .servicios_redes__titulo {
+      grid-area: servicios_servicios_redes__titulo; }
+    .servicios_redes__copy {
+      grid-area: servicios_redes__copy; }
+    .servicios_redes__pasos {
+      grid-area: servicios_redes__pasos; }
+    .servicios_redes__perfecta {
+      grid-area: servicios_redes__perfecta; }
+    .servicios_redes__incluye {
+      grid-area: servicios_redes__incluye; }
+    .servicios_redes__boton {
+      grid-area: servicios_redes__boton; }
+  .servicios_footer {
+    grid-area: servicios_footer;
+    display: grid;
+    grid-template-areas: "servicios_footer__newsletter" "servicios_footer__datos";
+    grid-template-columns: 100%;
+    align-items: center; }
+    .servicios_footer__newsletter {
+      grid-area: servicios_footer__newsletter; }
+    .servicios_footer__datos {
+      grid-area: servicios_footer__datos;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around; } }
+
+@media (min-width: 481px) {
+  .servicios_body {
+    display: grid;
+    grid-template-areas: "servicios_sticky-top" "servicios_inicio" "servicios_bajada" "servicios_agenda" "servicios_bases" "servicios_redes" "servicios_footer";
+    grid-template-columns: 100%; }
+  .servicios_sticky-top {
+    grid-area: servicios_sticky-top; }
+  .servicios_inicio {
+    grid-area: servicios_inicio;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+  .servicios_bajada {
+    grid-area: servicios_bajada; }
+  .servicios_agenda {
+    grid-area: servicios_agenda;
+    display: grid;
+    grid-template-areas: "servicios_agenda__foto" "servicios_agenda__titulo" "servicios_agenda__copy";
+    grid-template-columns: 100%; }
+    .servicios_agenda__foto {
+      grid-area: servicios_agenda__foto; }
+    .servicios_agenda__titulo {
+      grid-area: servicios_agenda__titulo; }
+    .servicios_agenda__copy {
+      grid-area: servicios_agenda__copy;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center; }
+  .servicios_bases {
+    grid-area: servicios_bases;
+    display: grid;
+    grid-template-areas: "servicios_bases__titulo servicios_bases__copy" "servicios_bases__pasos servicios_bases__pasos" "servicios_bases__perfecta servicios_bases__perfecta" "servicios_bases__incluye servicios_bases__boton";
+    grid-template-columns: 60% 40%; }
+    .servicios_bases__titulo {
+      grid-area: servicios_servicios_bases__titulo; }
+    .servicios_bases__copy {
+      grid-area: servicios_bases__copy; }
+    .servicios_bases__pasos {
+      grid-area: servicios_bases__pasos; }
+    .servicios_bases__perfecta {
+      grid-area: servicios_bases__perfecta; }
+    .servicios_bases__incluye {
+      grid-area: servicios_bases__incluye; }
+    .servicios_bases__boton {
+      grid-area: servicios_bases__boton; }
+  .servicios_redes {
+    grid-area: servicios_redes;
+    display: grid;
+    grid-template-areas: " servicios_redes__copy servicios_redes__titulo" "servicios_redes__pasos servicios_redes__pasos" "servicios_redes__perfecta servicios_redes__perfecta" "servicios_redes__incluye servicios_redes__boton";
+    grid-template-columns: 40% 60%; }
+    .servicios_redes__titulo {
+      grid-area: servicios_servicios_redes__titulo; }
+    .servicios_redes__copy {
+      grid-area: servicios_redes__copy; }
+    .servicios_redes__pasos {
+      grid-area: servicios_redes__pasos; }
+    .servicios_redes__perfecta {
+      grid-area: servicios_redes__perfecta; }
+    .servicios_redes__incluye {
+      grid-area: servicios_redes__incluye; }
+    .servicios_redes__boton {
+      grid-area: servicios_redes__boton; }
+  .servicios_footer {
+    grid-area: servicios_footer;
+    display: grid;
+    grid-template-areas: "servicios_footer__newsletter" "servicios_footer__datos";
+    grid-template-columns: 100%;
+    align-items: center; }
+    .servicios_footer__newsletter {
+      grid-area: servicios_footer__newsletter; }
+    .servicios_footer__datos {
+      grid-area: servicios_footer__datos;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around; } }
