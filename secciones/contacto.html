@@ -15,9 +15,9 @@
     <title>Mica Bianchi - Contacto</title>
 </head>
 
-<body class="container-fluid">
+<body class="contacto_body">
 
-    <header class="sticky-top">
+    <header class="contacto_sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,72 +38,74 @@
         </nav>
     </header>
 
-    <section id="contacto_main">
-        <div>
+    <section class="contacto_main">
+        <picture>
+            <source media="(max-width:480px)" srcset="../imagenes/micabianchi06-mob.jpg" class="img-fluid contacto_main__foto" alt="Mica - Contacto">
+            <source media="(min-width:481px)" srcset="../imagenes/micabianchi06.jpg" class="img-fluid contacto_main__foto" alt="Mica - Contacto">
+            <img class="img-fluid contacto_main__foto" src="#" alt="Mica - Contacto">
+        </picture>
+        <div class=contacto_main__titulo>
             <h1>Contacto</h1>
             <p><em>¡MANOS A LA OBRA!</em></p>
-            <div>
-                <div>
-                    <img src="#" alt="imagen de chat">
-                </div>
-                <div>
-                    <p><b>Escribime y empecemos a trabajar en conjunto.</b></p>
-                    <p>Si te gustaría agendar para alguna de mis consultorías, completá el formulario que encontrás aquí debajo. Me pondré en contacto con vos lo antes posible.</p>
-                    <p><b>¡GRACIAS!</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <form action="" class="col-md-4">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="marca" class="form-label">Nombre de tu marca</label>
-                    <input type="text" class="form-control" id="marca" name="marca">
-                </div>
-                <div class="mb-3">
-                    <label for="web_marca" class="form-label">Instagram o web de tu marca</label>
-                    <input type="text" class="form-control" id="web_marca" name="web_marca">
-                </div>
-                <div class="mb-3">
-                    <label for="residencia" class="form-label">¿De dónde sos?</label>
-                    <input type="text" class="form-control" id="residencia" name="residencia">
-                </div>
-                <div class="mb-3">
-                    <label for="conocimiento" class="form-label">¿Cómo me conociste?</label>
-                    <input type="text" class="form-control" id="conocimiento" name="conocimiento">
-                </div>
-                <div class="mb-3">
-                    <label for="consultoria" class="form-label">¿Para qué consultoría te gustaría agendar?</label>
-                    <select class="form-select" aria-label="Default select example" name="consultoria">
-                        <option value="bases">Definiendo las bases de tu negocio</option>
-                        <option value="redes">Contenido para redes que conecta</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="consulta" class="form-label">Dejá acá tu consulta y fechas y horarios disponibles, en el caso de que estés agendando para una consultoría. :)</label>
-                    <textarea class="form-control" id="consulta" name="consulta"></textarea>                    
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+        <div>
+        <img class="img-fluid contacto_main__ilustracion" src="../imagenes/contacto.png" alt="Chateando">
+        <div class="contacto_main__copy">
+            <p><b>Escribime y empecemos a trabajar en conjunto.</b></p>
+            <p>Si te gustaría agendar para alguna de mis consultorías, completá el formulario que encontrás aquí debajo. Me pondré en contacto con vos lo antes posible.</p>
+            <p><b>¡GRACIAS!</b></p>
         </div>
     </section>
+    
+    <section class="contacto_formulario d-flex justify-content-center">
+        <form action="" class="col-md-4">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="marca" class="form-label">Nombre de tu marca</label>
+                <input type="text" class="form-control" id="marca" name="marca">
+            </div>
+            <div class="mb-3">
+                <label for="web_marca" class="form-label">Instagram o web de tu marca</label>
+                <input type="text" class="form-control" id="web_marca" name="web_marca">
+            </div>
+            <div class="mb-3">
+                <label for="residencia" class="form-label">¿De dónde sos?</label>
+                <input type="text" class="form-control" id="residencia" name="residencia">
+            </div>
+            <div class="mb-3">
+                <label for="conocimiento" class="form-label">¿Cómo me conociste?</label>
+                <input type="text" class="form-control" id="conocimiento" name="conocimiento">
+            </div>
+            <div class="mb-3">
+                <label for="consultoria" class="form-label">¿Para qué consultoría te gustaría agendar?</label>
+                <select class="form-select" aria-label="Default select example" name="consultoria">
+                    <option value="bases">Definiendo las bases de tu negocio</option>
+                    <option value="redes">Contenido para redes que conecta</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="consulta" class="form-label">Dejá acá tu consulta y fechas y horarios disponibles, en el caso de que estés agendando para una consultoría. :)</label>
+                <textarea class="form-control" id="consulta" name="consulta"></textarea>                    
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
 
-    <footer class="servicios_footer">
-        <div class="servicios_footer__newsletter">
+    <footer class="contacto_footer">
+        <div class="contacto_footer__newsletter">
             <h2>¡No te olvides de suscribirte al newsletter!</h2>
             <form action="" method="post" id="form_newsletter">
                 <input type="email" id="email" name="email" placeholder="Ingresá tu mail">
             </form>
             <button class="btn btn-success" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
         </div>
-        <div class="servicios_footer__datos">
+        <div class="contacto_footer__datos">
             <img class="img-fluid footer__datos--logo" src="../imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
             <div class="footer__datos--contacto">
                 <a href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid" src="../imagenes/instagram.png" alt="icono_instagram"></a>
