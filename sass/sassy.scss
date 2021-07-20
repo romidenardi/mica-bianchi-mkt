@@ -546,7 +546,7 @@ h1, h2, h3, p {
         grid-area:servicios_redes;
         display:grid;
         grid-template-areas:
-        " servicios_redes__copy servicios_redes__titulo"
+        "servicios_redes__copy servicios_redes__titulo"
         "servicios_redes__pasos servicios_redes__pasos"
         "servicios_redes__perfecta servicios_redes__perfecta"
         "servicios_redes__incluye servicios_redes__boton";
@@ -591,6 +591,145 @@ h1, h2, h3, p {
 
         &__datos {
             grid-area:servicios_footer__datos;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:space-around;
+        }   align-items:center;
+    }
+}
+
+
+// Contacto
+
+@media (max-width:480px) {
+
+    .contacto_body {
+        display:grid;
+        grid-template-areas:
+        "contacto_sticky-top"
+        "contacto_main"
+        "contacto_formulario"
+        "contacto_footer";
+        grid-template-columns:100%;
+    }
+
+    .contacto_sticky-top {
+        grid-area:contacto_sticky-top;
+    }
+
+    .contacto_main {
+        grid-area:contacto_main;
+        display:grid;
+        grid-template-areas: 
+        "contacto_main__foto contacto_main__foto"
+        "contacto_main__titulo contacto_main__titulo"
+        "contacto_main__ilustracion contacto_main__copy";
+        grid-template-columns: 50% 50%;
+
+        &__foto {
+            grid-area:contacto_main__foto;
+        }
+
+        &__titulo {
+            grid-area:contacto_main__titulo;
+        }
+
+        &__ilustracion {
+            grid-area:contacto_main__ilustracion;
+        }
+
+        &__copy {
+            grid-area:contacto_main__copy;
+        }
+    }
+
+    .contacto_formulario {
+        grid-area:contacto_formulario;
+    }
+
+    .contacto_footer {
+        grid-area:contacto_footer;
+        display:grid;
+        grid-template-areas:
+        "contacto_footer__newsletter"
+        "contacto_footer__datos";
+        grid-template-columns:100%;
+
+        &__newsletter {
+            grid-area:contacto_footer__newsletter;
+        }
+
+        &__datos {
+            grid-area:contacto_footer__datos;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:space-around;
+        }   align-items:center;
+    }
+}
+
+@media (min-width:481px) {
+
+    .contacto_body {
+        display:grid;
+        grid-template-areas:
+        "contacto_sticky-top"
+        "contacto_main"
+        "contacto_formulario"
+        "contacto_footer";
+        grid-template-columns:100%;
+    }
+
+    .contacto_sticky-top {
+        grid-area:contacto_sticky-top;
+    }
+
+    .contacto_main {
+        grid-area:contacto_main;
+        display:grid;
+        grid-template-areas: 
+        "contacto_main__foto contacto_main__foto"
+        "contacto_main__titulo contacto_main__titulo"
+        "contacto_main__ilustracion contacto_main__copy";
+        grid-template-columns:50% 50%;
+
+        &__foto {
+            grid-area:contacto_main__foto;
+        }
+
+        &__titulo {
+            grid-area:contacto_main__titulo;
+        }
+
+        &__ilustracion {
+            grid-area:contacto_main__ilustracion;
+        }
+
+        &__copy {
+            grid-area:contacto_main__copy;
+        }
+    }
+
+    .contacto_formulario {
+        grid-area:contacto_formulario;
+    }
+
+    .contacto_footer {
+        grid-area:contacto_footer;
+        display:grid;
+        grid-template-areas:
+        "contacto_footer__newsletter"
+        "contacto_footer__datos";
+        grid-template-columns:100%;
+
+        &__newsletter {
+            grid-area:contacto_footer__newsletter;
+        }
+
+        &__datos {
+            grid-area:contacto_footer__datos;
             display:flex;
             flex-direction:row;
             flex-wrap:nowrap;
