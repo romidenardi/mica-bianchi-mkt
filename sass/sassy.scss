@@ -26,6 +26,18 @@ h1, h2, h3, p {
     margin:20px;
 }
 
+.index_about_quienSoy, .index_about_pilares, .index_about_proposito, .footer, .servicios_agenda, .servicios_bases, .servicios_redes, .servicios_footer, .contacto_footer {
+    background-color:$rosapalido;
+}
+
+.index_ultimosPosts, .contacto_formulario {
+    background-color:$naranja;
+}
+
+.servicios_bajada {
+    background-color:$verde;
+}
+
 // Superposición de imágenes
 
 .index_branding {
@@ -40,6 +52,38 @@ h1, h2, h3, p {
         position:absolute;
     }
 }
+
+.servicios_inicio {
+
+    &__foto {
+        position:relative;
+        display:block;
+        float:left;
+    }
+
+    &__contenido {
+        position:absolute;
+    }
+}
+
+.contacto_main {
+
+    &__foto {
+        position:relative;
+        display:block;
+        float:left;
+    }
+
+    &__contenido {
+        position:absolute;
+    }
+}
+
+
+
+
+
+
 
 // Grids
 
@@ -157,6 +201,11 @@ h1, h2, h3, p {
 
         &__newsletter {
             grid-area:footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -165,7 +214,23 @@ h1, h2, h3, p {
             flex-direction:row;
             flex-wrap:nowrap;
             justify-content:space-around;
-        }   align-items:center;
+            align-items:center;
+
+            &--logo {
+                width:40%;
+            }
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+
+                img {
+                    width:20px;
+                }
+            }
+        }
     }
 }
 
@@ -190,6 +255,11 @@ h1, h2, h3, p {
 
     .index_branding {
         grid-area:index_branding;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
     }
 
     .index_about_quienSoy {
@@ -277,6 +347,11 @@ h1, h2, h3, p {
         
         &__newsletter {
             grid-area:footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -286,6 +361,13 @@ h1, h2, h3, p {
             flex-wrap:nowrap;
             justify-content:space-around;
             align-items:center;
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+            }
         }
     }
 }
@@ -435,6 +517,11 @@ h1, h2, h3, p {
 
         &__newsletter {
             grid-area:servicios_footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -443,7 +530,23 @@ h1, h2, h3, p {
             flex-direction:row;
             flex-wrap:nowrap;
             justify-content:space-around;
-        }   align-items:center;
+            align-items:center;
+
+            &--logo {
+                width:40%;
+            }
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+
+                img {
+                    width:20px;
+                }
+            }
+        } 
     }
 }
 
@@ -587,6 +690,11 @@ h1, h2, h3, p {
 
         &__newsletter {
             grid-area:servicios_footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -595,7 +703,15 @@ h1, h2, h3, p {
             flex-direction:row;
             flex-wrap:nowrap;
             justify-content:space-around;
-        }   align-items:center;
+            align-items:center;
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+            }
+        }
     }
 }
 
@@ -620,27 +736,30 @@ h1, h2, h3, p {
 
     .contacto_main {
         grid-area:contacto_main;
-        display:grid;
-        grid-template-areas: 
-        "contacto_main__foto contacto_main__foto"
-        "contacto_main__titulo contacto_main__titulo"
-        "contacto_main__ilustracion contacto_main__copy";
-        grid-template-columns: 50% 50%;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
 
-        &__foto {
-            grid-area:contacto_main__foto;
-        }
+        &__contenido {
+            display:grid;
+            grid-template-areas:
+            "contacto_main__contenido--ilustracion contacto_main__contenido--titulo"
+            "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+            grid-template-columns:50% 50%;
 
-        &__titulo {
-            grid-area:contacto_main__titulo;
-        }
+            &--titulo {
+                grid-area:contacto_main__contenido--titulo;
+            }
+            
+            &--copy {
+                grid-area:contacto_main__contenido--copy;
+            }
 
-        &__ilustracion {
-            grid-area:contacto_main__ilustracion;
-        }
-
-        &__copy {
-            grid-area:contacto_main__copy;
+            &--ilustracion {
+                grid-area:contacto_main__contenido--ilustracion;
+            }
         }
     }
 
@@ -658,6 +777,11 @@ h1, h2, h3, p {
 
         &__newsletter {
             grid-area:contacto_footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -666,7 +790,23 @@ h1, h2, h3, p {
             flex-direction:row;
             flex-wrap:nowrap;
             justify-content:space-around;
-        }   align-items:center;
+            align-items:center;
+
+            &--logo {
+                width:40%;
+            }
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+
+                img {
+                    width:20px;
+                }
+            }
+        }
     }
 }
 
@@ -688,27 +828,30 @@ h1, h2, h3, p {
 
     .contacto_main {
         grid-area:contacto_main;
-        display:grid;
-        grid-template-areas: 
-        "contacto_main__foto contacto_main__foto"
-        "contacto_main__titulo contacto_main__titulo"
-        "contacto_main__ilustracion contacto_main__copy";
-        grid-template-columns:50% 50%;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
 
-        &__foto {
-            grid-area:contacto_main__foto;
-        }
+        &__contenido {
+            display:grid;
+            grid-template-areas:
+            "contacto_main__contenido--ilustracion contacto_main__contenido--titulo"
+            "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+            grid-template-columns:50% 50%;
 
-        &__titulo {
-            grid-area:contacto_main__titulo;
-        }
+            &--titulo {
+                grid-area:contacto_main__contenido--titulo;
+            }
+            
+            &--copy {
+                grid-area:contacto_main__contenido--copy;
+            }
 
-        &__ilustracion {
-            grid-area:contacto_main__ilustracion;
-        }
-
-        &__copy {
-            grid-area:contacto_main__copy;
+            &--ilustracion {
+                grid-area:contacto_main__contenido--ilustracion;
+            }
         }
     }
 
@@ -726,6 +869,11 @@ h1, h2, h3, p {
 
         &__newsletter {
             grid-area:contacto_footer__newsletter;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
 
         &__datos {
@@ -734,6 +882,14 @@ h1, h2, h3, p {
             flex-direction:row;
             flex-wrap:nowrap;
             justify-content:space-around;
-        }   align-items:center;
+            align-items:center;
+
+            &--contacto {
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                align-items:flex-end;
+            }
+        }
     }
 }

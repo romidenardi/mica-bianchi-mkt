@@ -12,12 +12,37 @@ p, ul li {
 h1, h2, h3, p {
   margin: 20px; }
 
+.index_about_quienSoy, .index_about_pilares, .index_about_proposito, .footer, .servicios_agenda, .servicios_bases, .servicios_redes, .servicios_footer, .contacto_footer {
+  background-color: #F8E7E7; }
+
+.index_ultimosPosts, .contacto_formulario {
+  background-color: #CF6921; }
+
+.servicios_bajada {
+  background-color: #3C5946; }
+
 .index_branding__foto {
   position: relative;
   display: block;
   float: left; }
 
 .index_branding__contenido {
+  position: absolute; }
+
+.servicios_inicio__foto {
+  position: relative;
+  display: block;
+  float: left; }
+
+.servicios_inicio__contenido {
+  position: absolute; }
+
+.contacto_main__foto {
+  position: relative;
+  display: block;
+  float: left; }
+
+.contacto_main__contenido {
   position: absolute; }
 
 @media (max-width: 480px) {
@@ -75,16 +100,30 @@ h1, h2, h3, p {
     grid-area: footer;
     display: grid;
     grid-template-areas: "footer__newsletter" "footer__datos";
-    grid-template-columns: 100%;
-    align-items: center; }
+    grid-template-columns: 100%; }
     .footer__newsletter {
-      grid-area: footer__newsletter; }
+      grid-area: footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .footer__datos {
       grid-area: footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: center; }
+      .footer__datos--logo {
+        width: 40%; }
+      .footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; }
+        .footer__datos--contacto img {
+          width: 20px; } }
 
 @media (min-width: 481px) {
   .index_body {
@@ -94,7 +133,12 @@ h1, h2, h3, p {
   .sticky-top {
     grid-area: sticky-top; }
   .index_branding {
-    grid-area: index_branding; }
+    grid-area: index_branding;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
   .index_about_quienSoy {
     grid-area: index_about_quienSoy;
     display: grid;
@@ -139,14 +183,24 @@ h1, h2, h3, p {
     grid-template-areas: "footer__newsletter" "footer__datos";
     grid-template-columns: 100%; }
     .footer__newsletter {
-      grid-area: footer__newsletter; }
+      grid-area: footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .footer__datos {
       grid-area: footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
-      align-items: center; } }
+      align-items: center; }
+      .footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; } }
 
 @media (max-width: 480px) {
   .servicios_body {
@@ -218,16 +272,30 @@ h1, h2, h3, p {
     grid-area: servicios_footer;
     display: grid;
     grid-template-areas: "servicios_footer__newsletter" "servicios_footer__datos";
-    grid-template-columns: 100%;
-    align-items: center; }
+    grid-template-columns: 100%; }
     .servicios_footer__newsletter {
-      grid-area: servicios_footer__newsletter; }
+      grid-area: servicios_footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .servicios_footer__datos {
       grid-area: servicios_footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: center; }
+      .servicios_footer__datos--logo {
+        width: 40%; }
+      .servicios_footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; }
+        .servicios_footer__datos--contacto img {
+          width: 20px; } }
 
 @media (min-width: 481px) {
   .servicios_body {
@@ -299,16 +367,26 @@ h1, h2, h3, p {
     grid-area: servicios_footer;
     display: grid;
     grid-template-areas: "servicios_footer__newsletter" "servicios_footer__datos";
-    grid-template-columns: 100%;
-    align-items: center; }
+    grid-template-columns: 100%; }
     .servicios_footer__newsletter {
-      grid-area: servicios_footer__newsletter; }
+      grid-area: servicios_footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .servicios_footer__datos {
       grid-area: servicios_footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: center; }
+      .servicios_footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; } }
 
 @media (max-width: 480px) {
   .contacto_body {
@@ -319,33 +397,51 @@ h1, h2, h3, p {
     grid-area: contacto_sticky-top; }
   .contacto_main {
     grid-area: contacto_main;
-    display: grid;
-    grid-template-areas: "contacto_main__foto contacto_main__foto" "contacto_main__titulo contacto_main__titulo" "contacto_main__ilustracion contacto_main__copy";
-    grid-template-columns: 50% 50%; }
-    .contacto_main__foto {
-      grid-area: contacto_main__foto; }
-    .contacto_main__titulo {
-      grid-area: contacto_main__titulo; }
-    .contacto_main__ilustracion {
-      grid-area: contacto_main__ilustracion; }
-    .contacto_main__copy {
-      grid-area: contacto_main__copy; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .contacto_main__contenido {
+      display: grid;
+      grid-template-areas: "contacto_main__contenido--ilustracion contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+      grid-template-columns: 50% 50%; }
+      .contacto_main__contenido--titulo {
+        grid-area: contacto_main__contenido--titulo; }
+      .contacto_main__contenido--copy {
+        grid-area: contacto_main__contenido--copy; }
+      .contacto_main__contenido--ilustracion {
+        grid-area: contacto_main__contenido--ilustracion; }
   .contacto_formulario {
     grid-area: contacto_formulario; }
   .contacto_footer {
     grid-area: contacto_footer;
     display: grid;
     grid-template-areas: "contacto_footer__newsletter" "contacto_footer__datos";
-    grid-template-columns: 100%;
-    align-items: center; }
+    grid-template-columns: 100%; }
     .contacto_footer__newsletter {
-      grid-area: contacto_footer__newsletter; }
+      grid-area: contacto_footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .contacto_footer__datos {
       grid-area: contacto_footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: center; }
+      .contacto_footer__datos--logo {
+        width: 40%; }
+      .contacto_footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; }
+        .contacto_footer__datos--contacto img {
+          width: 20px; } }
 
 @media (min-width: 481px) {
   .contacto_body {
@@ -356,30 +452,44 @@ h1, h2, h3, p {
     grid-area: contacto_sticky-top; }
   .contacto_main {
     grid-area: contacto_main;
-    display: grid;
-    grid-template-areas: "contacto_main__foto contacto_main__foto" "contacto_main__titulo contacto_main__titulo" "contacto_main__ilustracion contacto_main__copy";
-    grid-template-columns: 50% 50%; }
-    .contacto_main__foto {
-      grid-area: contacto_main__foto; }
-    .contacto_main__titulo {
-      grid-area: contacto_main__titulo; }
-    .contacto_main__ilustracion {
-      grid-area: contacto_main__ilustracion; }
-    .contacto_main__copy {
-      grid-area: contacto_main__copy; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .contacto_main__contenido {
+      display: grid;
+      grid-template-areas: "contacto_main__contenido--ilustracion contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+      grid-template-columns: 50% 50%; }
+      .contacto_main__contenido--titulo {
+        grid-area: contacto_main__contenido--titulo; }
+      .contacto_main__contenido--copy {
+        grid-area: contacto_main__contenido--copy; }
+      .contacto_main__contenido--ilustracion {
+        grid-area: contacto_main__contenido--ilustracion; }
   .contacto_formulario {
     grid-area: contacto_formulario; }
   .contacto_footer {
     grid-area: contacto_footer;
     display: grid;
     grid-template-areas: "contacto_footer__newsletter" "contacto_footer__datos";
-    grid-template-columns: 100%;
-    align-items: center; }
+    grid-template-columns: 100%; }
     .contacto_footer__newsletter {
-      grid-area: contacto_footer__newsletter; }
+      grid-area: contacto_footer__newsletter;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
     .contacto_footer__datos {
       grid-area: contacto_footer__datos;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: center; }
+      .contacto_footer__datos--contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end; } }
