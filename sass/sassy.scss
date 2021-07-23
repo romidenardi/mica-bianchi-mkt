@@ -11,7 +11,7 @@
     line-height:1.2;
 }
 
-// Estilos de fuente
+// Para revisar y acomodar
 
 h1, h2, h3 {
     font-family:$titulo;
@@ -20,22 +20,62 @@ p, ul li {
     font-family:$copy;
 }
 
-// Box Modelling + Fondos
-
 h1, h2, h3, p {
     margin:20px;
 }
 
-.index_about_quienSoy, .index_about_pilares, .index_about_proposito, .footer, .servicios_agenda, .servicios_bases, .servicios_redes, .servicios_footer, .contacto_footer {
+// Estilos
+
+.fondo_rosa {
     background-color:$rosapalido;
 }
 
-.index_ultimosPosts, .contacto_formulario {
+.fondo_naranja {
     background-color:$naranja;
 }
 
-.servicios_bajada {
+.fondo_verde {
     background-color:$verde;
+}
+
+.button_verde {
+    background-color:$verde;
+    color:$rosapalido;
+    border-radius:5px;
+    font-family:$titulo;
+    font-size:25px;
+    text-decoration:none;
+    padding:3px 12px 3px 12px;
+}
+
+.button_amarillo {
+    background-color:$amarillo;
+    color:$verde;
+    border:none;
+    border-radius:5px;
+    font-family:$copy;
+    font-size:25px;
+    font-weight:bold;
+    text-decoration:none;
+    padding:3px 12px 3px 12px;
+}
+
+.titulo_gris {
+    font-family:$titulo;
+    font-size:40px;
+    color:$gris;
+}
+
+.titulo_verde {
+    font-family:$titulo;
+    font-size:40px;
+    color:$verde;
+}
+
+.titulo_naranja {
+    font-family:$titulo;
+    font-size:40px;
+    color:$naranja;
 }
 
 // Superposición de imágenes
@@ -78,12 +118,6 @@ h1, h2, h3, p {
         position:absolute;
     }
 }
-
-
-
-
-
-
 
 // Grids
 

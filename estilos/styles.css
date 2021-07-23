@@ -12,14 +12,49 @@ p, ul li {
 h1, h2, h3, p {
   margin: 20px; }
 
-.index_about_quienSoy, .index_about_pilares, .index_about_proposito, .footer, .servicios_agenda, .servicios_bases, .servicios_redes, .servicios_footer, .contacto_footer {
+.fondo_rosa {
   background-color: #F8E7E7; }
 
-.index_ultimosPosts, .contacto_formulario {
+.fondo_naranja {
   background-color: #CF6921; }
 
-.servicios_bajada {
+.fondo_verde {
   background-color: #3C5946; }
+
+.button_verde {
+  background-color: #3C5946;
+  color: #F8E7E7;
+  border-radius: 5px;
+  font-family: "Averia Libre", cursive;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 3px 12px 3px 12px; }
+
+.button_amarillo {
+  background-color: #EBA94C;
+  color: #3C5946;
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px 12px 3px 12px; }
+
+.titulo_gris {
+  font-family: "Averia Libre", cursive;
+  font-size: 40px;
+  color: #2B292C; }
+
+.titulo_verde {
+  font-family: "Averia Libre", cursive;
+  font-size: 40px;
+  color: #3C5946; }
+
+.titulo_naranja {
+  font-family: "Averia Libre", cursive;
+  font-size: 40px;
+  color: #CF6921; }
 
 .index_branding__foto {
   position: relative;
