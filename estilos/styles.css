@@ -9,8 +9,29 @@ h1, h2, h3 {
 p, ul li {
   font-family: "Raleway", sans-serif; }
 
-h1, h2, h3, p {
+.fuente_destacado {
+  font-family: "Antic", sans-serif; }
+
+.margen20 {
   margin: 20px; }
+
+.margen5 {
+  margin: 5px; }
+
+.titulo_gris {
+  font-family: "Averia Libre", cursive;
+  font-size: 2.5em;
+  color: #2B292C; }
+
+.titulo_verde {
+  font-family: "Averia Libre", cursive;
+  font-size: 2.5em;
+  color: #3C5946; }
+
+.titulo_naranja {
+  font-family: "Averia Libre", cursive;
+  font-size: 2.5em;
+  color: #CF6921; }
 
 .fondo_rosa {
   background-color: #F8E7E7; }
@@ -26,7 +47,7 @@ h1, h2, h3, p {
   color: #F8E7E7;
   border-radius: 5px;
   font-family: "Averia Libre", cursive;
-  font-size: 25px;
+  font-size: 1.5em;
   text-decoration: none;
   padding: 3px 12px 3px 12px; }
 
@@ -36,25 +57,21 @@ h1, h2, h3, p {
   border: none;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
   padding: 3px 12px 3px 12px; }
 
-.titulo_gris {
-  font-family: "Averia Libre", cursive;
-  font-size: 40px;
-  color: #2B292C; }
-
-.titulo_verde {
-  font-family: "Averia Libre", cursive;
-  font-size: 40px;
-  color: #3C5946; }
-
-.titulo_naranja {
-  font-family: "Averia Libre", cursive;
-  font-size: 40px;
-  color: #CF6921; }
+.button_blanco {
+  background-color: #fff;
+  color: #3C5946;
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px 12px 3px 12px; }
 
 .index_branding__foto {
   position: relative;
@@ -92,8 +109,14 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
+    .index_branding__contenido {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
   .index_about_quienSoy {
     grid-area: index_about_quienSoy;
     display: grid;
@@ -104,7 +127,8 @@ h1, h2, h3, p {
     .index_about_quienSoy__copy {
       grid-area: index_about_quienSoy__copy; }
     .index_about_quienSoy__imagen {
-      grid-area: index_about_quienSoy__imagen; }
+      grid-area: index_about_quienSoy__imagen;
+      margin: 40px 0px 20px 20px; }
   .index_about_pilares {
     grid-area: index_about_pilares;
     display: grid;
@@ -172,8 +196,14 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
+    .index_branding__contenido {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
   .index_about_quienSoy {
     grid-area: index_about_quienSoy;
     display: grid;
@@ -184,7 +214,11 @@ h1, h2, h3, p {
     .index_about_quienSoy__copy {
       grid-area: index_about_quienSoy__copy; }
     .index_about_quienSoy__imagen {
-      grid-area: index_about_quienSoy__imagen; }
+      grid-area: index_about_quienSoy__imagen;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-end; }
   .index_about_pilares {
     grid-area: index_about_pilares;
     display: grid;
@@ -249,8 +283,14 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
+    .servicios_inicio__contenido {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
   .servicios_bajada {
     grid-area: servicios_bajada; }
   .servicios_agenda {
@@ -344,8 +384,14 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
+    .servicios_inicio__contenido {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
   .servicios_bajada {
     grid-area: servicios_bajada; }
   .servicios_agenda {
@@ -435,11 +481,11 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
-      grid-template-areas: "contacto_main__contenido--ilustracion contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
       grid-template-columns: 50% 50%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
@@ -490,11 +536,11 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
-      grid-template-areas: "contacto_main__contenido--ilustracion contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
       grid-template-columns: 50% 50%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }

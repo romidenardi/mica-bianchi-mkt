@@ -20,11 +20,40 @@ p, ul li {
     font-family:$copy;
 }
 
-h1, h2, h3, p {
+.fuente_destacado{
+    font-family:$destacado
+}
+
+// Márgenes y paddings
+
+.margen20 {
     margin:20px;
 }
 
+.margen5 {
+    margin:5px;
+}
+
+
 // Estilos
+
+.titulo_gris {
+    font-family:$titulo;
+    font-size:2.5em;
+    color:$gris;
+}
+
+.titulo_verde {
+    font-family:$titulo;
+    font-size:2.5em;
+    color:$verde;
+}
+
+.titulo_naranja {
+    font-family:$titulo;
+    font-size:2.5em;
+    color:$naranja;
+}
 
 .fondo_rosa {
     background-color:$rosapalido;
@@ -43,7 +72,7 @@ h1, h2, h3, p {
     color:$rosapalido;
     border-radius:5px;
     font-family:$titulo;
-    font-size:25px;
+    font-size:1.5em;
     text-decoration:none;
     padding:3px 12px 3px 12px;
 }
@@ -54,28 +83,22 @@ h1, h2, h3, p {
     border:none;
     border-radius:5px;
     font-family:$copy;
-    font-size:25px;
+    font-size:1.5em;
     font-weight:bold;
     text-decoration:none;
     padding:3px 12px 3px 12px;
 }
 
-.titulo_gris {
-    font-family:$titulo;
-    font-size:40px;
-    color:$gris;
-}
-
-.titulo_verde {
-    font-family:$titulo;
-    font-size:40px;
+.button_blanco {
+    background-color:#fff;
     color:$verde;
-}
-
-.titulo_naranja {
-    font-family:$titulo;
-    font-size:40px;
-    color:$naranja;
+    border:none;
+    border-radius:5px;
+    font-family:$copy;
+    font-size:1.5em;
+    font-weight:bold;
+    text-decoration:none;
+    padding:3px 12px 3px 12px;
 }
 
 // Superposición de imágenes
@@ -147,8 +170,16 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
+        
+        &__contenido {
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:center;
+            align-items:center;
+        }
     }
 
     .index_about_quienSoy {
@@ -170,6 +201,7 @@ h1, h2, h3, p {
 
         &__imagen {
             grid-area:index_about_quienSoy__imagen;
+            margin:40px 0px 20px 20px;
         }
     }
 
@@ -292,8 +324,16 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
+
+        &__contenido {
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:center;
+            align-items:center;
+        }
     }
 
     .index_about_quienSoy {
@@ -315,6 +355,10 @@ h1, h2, h3, p {
 
         &__imagen {
             grid-area:index_about_quienSoy__imagen;
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:row;
+            justify-content:flex-end;
         }
     }
 
@@ -432,8 +476,16 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
+
+        &__contenido {
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:center;
+            align-items:center;
+        }
     }
 
     .servicios_bajada {
@@ -609,8 +661,16 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
+
+        &__contenido {
+            display:flex;
+            flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:center;
+            align-items:center;
+        }
     }
 
     .servicios_bajada {
@@ -773,13 +833,14 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
 
         &__contenido {
             display:grid;
             grid-template-areas:
-            "contacto_main__contenido--ilustracion contacto_main__contenido--titulo"
+            "contacto_main__contenido--titulo contacto_main__contenido--titulo"
+            "contacto_main__contenido--ilustracion contacto_main__contenido--copy"
             "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
             grid-template-columns:50% 50%;
 
@@ -865,13 +926,14 @@ h1, h2, h3, p {
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
 
         &__contenido {
             display:grid;
             grid-template-areas:
-            "contacto_main__contenido--ilustracion contacto_main__contenido--titulo"
+            "contacto_main__contenido--titulo contacto_main__contenido--titulo"
+            "contacto_main__contenido--ilustracion contacto_main__contenido--copy"
             "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
             grid-template-columns:50% 50%;
 
