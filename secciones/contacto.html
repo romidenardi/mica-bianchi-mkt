@@ -60,7 +60,7 @@
     </section>
     
     <section class="contacto_formulario d-flex justify-content-center fondo_naranja">
-        <form action="" class="col-md-4">
+        <form action="" class="col-md-4" id="contact-form">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -87,7 +87,7 @@
             </div>
             <div class="mb-3">
                 <label for="consultoria" class="form-label">¿Para qué consultoría te gustaría agendar?</label>
-                <select class="form-select" aria-label="Default select example" name="consultoria">
+                <select class="form-select" aria-label="Default select example" name="consultoria" id="consultoria">
                     <option value="bases">Definiendo las bases de tu negocio</option>
                     <option value="redes">Contenido para redes que conecta</option>
                 </select>
@@ -117,9 +117,11 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+    <script src="../src/app.js"></script>
 </body>
 
 </html>
