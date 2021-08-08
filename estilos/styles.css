@@ -3,20 +3,32 @@
   padding: 0;
   line-height: 1.2; }
 
-h1, h2, h3 {
-  font-family: "Averia Libre", cursive; }
+@media (max-width: 480px) {
+  .margen-ancho-costados {
+    margin: 20px 30px 20px 30px; } }
 
-p, ul li {
-  font-family: "Raleway", sans-serif; }
+@media (min-width: 481px) {
+  .margen-ancho-costados {
+    margin: 20px 120px 20px 120px; } }
 
-.fuente_destacado {
-  font-family: "Antic", sans-serif; }
+.margen40 {
+  margin: 40px; }
 
 .margen20 {
   margin: 20px; }
 
 .margen5 {
   margin: 5px; }
+
+.padding20 {
+  padding: 20px 0px 20px 0; }
+
+.supertitulo_verde {
+  font-family: "Averia Libre", cursive;
+  font-size: 3em;
+  color: #3C5946;
+  text-align: center;
+  line-height: 1; }
 
 .titulo_gris {
   font-family: "Averia Libre", cursive;
@@ -33,8 +45,89 @@ p, ul li {
   font-size: 2.5em;
   color: #CF6921; }
 
-.fondo_rosa {
+.titulo_rosa {
+  font-family: "Averia Libre", cursive;
+  font-size: 2.5em;
+  color: #C97D7D; }
+
+.titulo_naranjapalido {
+  font-family: "Averia Libre", cursive;
+  font-size: 2.5em;
+  color: #F7D2B7;
+  text-align: center; }
+
+.subtitulo_gris {
+  font-family: "Averia Libre", cursive;
+  font-size: 2em;
+  color: #2B292C;
+  text-align: center; }
+
+.subtitulo_numero {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  color: #2B292C; }
+
+.numero {
+  font-family: "Averia Libre", cursive;
+  font-size: 4em;
+  color: #3C5946; }
+
+.copy_cabeceras {
+  font-family: "Antic", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center; }
+
+.bajada_contacto {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  color: #fff; }
+
+.copy_cuerpo {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  color: #2B292C; }
+
+.copy_cuerpo_blanco {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  color: #fff; }
+
+.copy_cuerpo_naranja {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  color: #F7D2B7;
+  text-align: center; }
+
+.fuente_destacado {
+  font-family: "Antic", sans-serif;
+  font-size: 1.2em;
+  color: #2B292C; }
+
+.link_naranja {
+  text-decoration: none;
+  color: #F7D2B7; }
+
+.link_naranja:hover {
+  color: #fff; }
+
+.link_gris {
+  text-decoration: none;
+  color: #2B292C; }
+
+.link_gris:hover {
+  color: #CF6921; }
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  color: #F7D2B7; }
+
+.fondo_rosapalido {
   background-color: #F8E7E7; }
+
+.fondo_naranjapalido {
+  background-color: #F7D2B7; }
 
 .fondo_naranja {
   background-color: #CF6921; }
@@ -51,6 +144,9 @@ p, ul li {
   text-decoration: none;
   padding: 3px 12px 3px 12px; }
 
+.button_verde:hover {
+  color: #fff; }
+
 .button_amarillo {
   background-color: #EBA94C;
   color: #3C5946;
@@ -62,6 +158,9 @@ p, ul li {
   text-decoration: none;
   padding: 3px 12px 3px 12px; }
 
+.button_amarillo:hover {
+  color: #fff; }
+
 .button_blanco {
   background-color: #fff;
   color: #3C5946;
@@ -72,6 +171,9 @@ p, ul li {
   font-weight: bold;
   text-decoration: none;
   padding: 3px 12px 3px 12px; }
+
+.button_blanco:hover {
+  color: #CF6921; }
 
 .index_branding__foto {
   position: relative;
@@ -304,11 +406,15 @@ p, ul li {
       grid-area: servicios_agenda__titulo; }
     .servicios_agenda__copy {
       grid-area: servicios_agenda__copy;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center; }
+      display: grid;
+      grid-template-areas: "servicios_agenda__copy--uno"  "servicios_agenda__copy--dos"  "servicios_agenda__copy--tres";
+      grid-template-columns: 100%; }
+      .servicios_agenda__copy--uno {
+        grid-area: servicios_agenda__copy--uno; }
+      .servicios_agenda__copy--dos {
+        grid-area: servicios_agenda__copy--dos; }
+      .servicios_agenda__copy--tres {
+        grid-area: servicios_agenda__copy--tres; }
   .servicios_bases {
     grid-area: servicios_bases;
     display: grid;
@@ -405,11 +511,15 @@ p, ul li {
       grid-area: servicios_agenda__titulo; }
     .servicios_agenda__copy {
       grid-area: servicios_agenda__copy;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      align-items: center; }
+      display: grid;
+      grid-template-areas: "servicios_agenda__copy--uno servicios_agenda__copy--dos servicios_agenda__copy--tres";
+      grid-template-columns: 1fr 1fr 1fr; }
+      .servicios_agenda__copy--uno {
+        grid-area: servicios_agenda__copy--uno; }
+      .servicios_agenda__copy--dos {
+        grid-area: servicios_agenda__copy--dos; }
+      .servicios_agenda__copy--tres {
+        grid-area: servicios_agenda__copy--tres; }
   .servicios_bases {
     grid-area: servicios_bases;
     display: grid;
@@ -486,7 +596,8 @@ p, ul li {
     .contacto_main__contenido {
       display: grid;
       grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
-      grid-template-columns: 50% 50%; }
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 40% 60%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
       .contacto_main__contenido--copy {
@@ -541,7 +652,8 @@ p, ul li {
     .contacto_main__contenido {
       display: grid;
       grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
-      grid-template-columns: 50% 50%; }
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 40% 60%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
       .contacto_main__contenido--copy {
