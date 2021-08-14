@@ -10,14 +10,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="icon" type="image/png" href="/imagenes/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Berkshire+Swash&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Mica Bianchi - Blog</title>
 </head>
 
-<body class="container-fluid">
+<body class="blog_body">
 
-    <header class="sticky-top">
+    <header class="blog_navegacion sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +31,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./blog.html">blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="./recursos.html">Recursos</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
                         </li>
@@ -38,34 +42,41 @@
         </nav>
     </header>
 
-    <section id="blog_main">
-        <div>
-            <h1>Blog</h1>
-            <img src="#" alt="icono de engranajes">
-            <p><em>EN CONSTRUCCIÓN</em></p>
-        </div>
-        <div>
-            <h2>Estoy trabajando en un blog. <b>¡Volvé pronto!</b>></h2>
-            <img src="#" alt="imagen de blog">
+    <section class="blog_main">
+        <picture class="blog_main__foto">
+            <source media="(max-width:480px)" srcset="../imagenes/micabianchi07-mob.jpg" class="img-fluid" alt="Mica - Blog">
+            <source media="(min-width:481px)" srcset="../imagenes/micabianchi07.jpg" class="img-fluid" alt="Mica - Blog">
+            <img src="../imagenes/micabianchi07.jpg" class="img-fluid" alt="Mica - Blog">
+        </picture>
+        <div class="blog_main__contenido">
+            <div class="blog_main__contenido--titulo">
+                <h1 class="supertitulo_verde margen40">Blog</h1>
+                <img src="../imagenes/construccion.png" alt="Engranajes">
+                <p class="copy_cabeceras margen40">EN CONSTRUCCIÓN</p>
+            </div>
+            <div class="blog_main__contenido--copy margen-ancho-costados">
+                <h2 class="titulo_rosapalido">Estoy trabajando en un blog. <b>¡Volvé pronto!</b></h2>
+            </div>
+            <img class="img-fluid blog_main__contenido--ilustracion" src="../imagenes/blog.png" alt="Escrito">
         </div>
     </section>
 
-    <footer class="blog_footer">
+    <footer class="blog_footer fondo_rosapalido">
         <div class="blog_footer__newsletter">
-            <h2>¡No te olvides de suscribirte al newsletter!</h2>
-            <form action="" method="post" id="form_newsletter">
+            <h2 class="subtitulo_gris margen20">¡No te olvides de suscribirte al newsletter!</h2>
+            <form class="form" action="" method="post" id="form_newsletter">
                 <input type="email" id="email" name="email" placeholder="Ingresá tu mail">
             </form>
-            <button class="button_amarillo" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
+            <button class="button_amarillo margen20" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
         </div>
         <div class="blog_footer__datos">
-            <img class="img-fluid blog_footer__datos--logo" src="../imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
+            <img class="img-fluid blog_footer__datos--logo margen20" src="../imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
             <div class="blog_footer__datos--contacto">
-                <a href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid" src="../imagenes/instagram.png" alt="icono_instagram"></a>
-                <a href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid" src="../imagenes/email.png" alt="icono_email"></a>
-            </div>
+                <a class="link_gris" href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid margen5" src="../imagenes/instagram.png" alt="icono_instagram"></a>
+                <a class="link_gris" href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid margen5" src="../imagenes/email.png" alt="icono_email"></a>
+            </div>  
         </div>
-    </footer>
+    </footer>>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
