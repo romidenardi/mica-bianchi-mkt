@@ -143,6 +143,18 @@ label {
   font-size: 1.2em;
   color: #F7D2B7; }
 
+.item_menu {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  color: #2B292C;
+  text-decoration: none; }
+
+.item_menu:hover {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  color: #CF6921;
+  text-decoration: none; }
+
 .fondo_rosapalido {
   background-color: #F8E7E7; }
 

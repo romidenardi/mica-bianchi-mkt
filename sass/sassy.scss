@@ -188,6 +188,21 @@ label {
     color:$naranjapalido;
 }
 
+.item_menu {
+    font-family:$copy;
+    font-size:1.1em;
+    color:$gris;
+    text-decoration:none;
+}
+
+.item_menu:hover {
+    font-family:$copy;
+    font-size:1.1em;
+    color:$naranja;
+    text-decoration:none;
+}
+
+
 .fondo_rosapalido {
     background-color:$rosapalido;
 }
