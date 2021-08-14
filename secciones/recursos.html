@@ -10,14 +10,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="icon" type="image/png" href="/imagenes/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Berkshire+Swash&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Mica Bianchi - Recursos</title>
 </head>
 
-<body class="container-fluid">
+<body class="recursos_body">
 
-    <header class="sticky-top">
+    <header class="recursos_navegacion sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +31,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./recursos.html">recursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./recursos.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="./recursos.html">Recursos</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
                         </li>
@@ -37,37 +41,39 @@
             </div>
         </nav>
     </header>
+    </header>
     
-    <section id="recursos_main">
+    <section class="recursos_main">
+        <picture class="recursos_main__foto" >
+            <source media="(max-width:480px)" srcset="../imagenes/micabianchi07-mob.jpg" class="img-fluid" alt="Mica - Recursos">
+            <source media="(min-width:481px)" srcset="../imagenes/micabianchi07.jpg" class="img-fluid" alt="Mica - Recursos">
+            <img src="../imagenes/micabianchi07.jpg" class="img-fluid" alt="Mica - Recursos">
+        </picture>
+        <div class= recursos_main__contenido>
+            <h1 class="supertitulo_verde margen40">Recursos gratuitos y pagos</h1>
+            <p class="copy_cabeceras margen40">DESCARGÁ TODOS MIS RECURSOS GRATUITOS, PARA LLEVAR TU MARCA AL PRÓXIMO NIVEL.</p>
+        </div>    
+    </section>
+
+    <section class="recursos_bajada fondo_naranja">
+        <h2 class="subtitulo_verde margen-ancho-costados">Mi objetivo: ayudarte y compartirte todo lo que sé.</h2>
+        <p class="copy_cuerpo_blanco_centrado margen10"><b>¡Se vienen recursos gratuitos, pronto!</b></p>
+        <p class="copy_cuerpo_blanco_centrado margen10">Dejá tu mail para enterarte primero.</p>
         <div>
-            <h1>Recursos gratuitos y pagos</h1>
-            <p><em>DESCARGÁ TODOS MIS RECURSOS GRATUITOS, PARA LLEVAR TU MARCA AL PRÓXIMO NIVEL.</em></p>
-        </div>
-        <div>
-            <p>Mi objetivo: ayudarte y compartirte todo lo que sé.</p>
-            <p><b>¡Se vienen recursos gratuitos pronto!</b></p>
-            <p>Dejá tu mail para enterarte primero.</p>
-            <form action="" method="get" id="form_newsletter">
+            <form class="form" action="" method="get" id="form_newsletter">
                 <input type="email" id="email" name="email" placeholder="Ingresa tu mail">
             </form>
-            <button class="btn btn-success" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
+            <button class="button_amarillo margen20" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
         </div>
     </section>
 
-    <footer class="recursos_footer">
-        <div class="recursos_footer__newsletter">
-            <h2>¡No te olvides de suscribirte al newsletter!</h2>
-            <form action="" method="post" id="form_newsletter">
-                <input type="email" id="email" name="email" placeholder="Ingresá tu mail">
-            </form>
-            <button class="button_amarillo" type="submit" form="form_newsletter" value="Submit">Suscribirme</button>
-        </div>
+    <footer class="recursos_footer fondo_rosapalido">
         <div class="recursos_footer__datos">
-            <img class="img-fluid recursos_footer__datos--logo" src="../imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
+            <img class="img-fluid recursos_footer__datos--logo margen20" src="../imagenes/sellomicaclaro.png" alt="Mica - Marketing y sustentabilidad">
             <div class="recursos_footer__datos--contacto">
-                <a href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid" src="../imagenes/instagram.png" alt="icono_instagram"></a>
-                <a href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid" src="../imagenes/email.png" alt="icono_email"></a>
-            </div>
+                <a class="link_gris" href="https://www.instagram.com/micabianchii/">soymicabianchi <img class="img-fluid margen5" src="../imagenes/instagram.png" alt="icono_instagram"></a>
+                <a class="link_gris" href="mailto:hola@micabianchi.com">hola@micabianchi.com<img class="img-fluid margen5" src="../imagenes/email.png" alt="icono_email"></a>
+            </div>  
         </div>
     </footer>
 
