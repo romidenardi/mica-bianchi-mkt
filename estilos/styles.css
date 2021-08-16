@@ -227,6 +227,12 @@ label {
 .button_blanco:hover {
   color: #CF6921; }
 
+.navbar-toggler:focus {
+  color: transparent; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
 .index_branding__foto {
   position: relative;
   display: block;
@@ -675,9 +681,7 @@ label {
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
-      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--copy contacto_main__contenido--copy";
-      grid-template-columns: 30% 70%;
-      grid-template-rows: 40% 60%; }
+      grid-template-areas: "contacto_main__contenido--titulo" "contacto_main__contenido--copy"; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
       .contacto_main__contenido--copy {
@@ -733,15 +737,19 @@ label {
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
-      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
-      grid-template-columns: 30% 70%;
+      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo" ". contacto_main__contenido--ilustracion contacto_main__contenido--copy .";
+      grid-template-columns: 15% 15% 60% 10%;
       grid-template-rows: 40% 60%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
       .contacto_main__contenido--copy {
-        grid-area: contacto_main__contenido--copy; }
+        grid-area: contacto_main__contenido--copy;
+        justify-self: center;
+        align-self: center; }
       .contacto_main__contenido--ilustracion {
-        grid-area: contacto_main__contenido--ilustracion; }
+        grid-area: contacto_main__contenido--ilustracion;
+        justify-self: center;
+        align-self: center; }
   .contacto_formulario {
     grid-area: contacto_formulario; }
   .contacto_footer {
@@ -871,9 +879,7 @@ label {
     align-items: center; }
     .blog_main__contenido {
       display: grid;
-      grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo" "blog_main__contenido--copy blog_main__contenido--copy";
-      grid-template-columns: 70% 30%;
-      grid-template-rows: 60% 40%; }
+      grid-template-areas: "blog_main__contenido--titulo" "blog_main__contenido--copy"; }
       .blog_main__contenido--titulo {
         grid-area: blog_main__contenido--titulo;
         display: flex;
@@ -884,7 +890,8 @@ label {
       .blog_main__contenido--copy {
         grid-area: blog_main__contenido--copy; }
         .blog_main__contenido--copy h2 {
-          font-size: 2rem; }
+          font-size: 2rem;
+          text-align: center; }
       .blog_main__contenido--ilustracion {
         display: none; }
   .blog_footer {
@@ -932,8 +939,8 @@ label {
     align-items: center; }
     .blog_main__contenido {
       display: grid;
-      grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo" "blog_main__contenido--copy blog_main__contenido--ilustracion" "blog_main__contenido--copy blog_main__contenido--ilustracion";
-      grid-template-columns: 50% 50%;
+      grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo blog_main__contenido--titulo blog_main__contenido--titulo" ". blog_main__contenido--copy blog_main__contenido--ilustracion .";
+      grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 60% 40%; }
       .blog_main__contenido--titulo {
         grid-area: blog_main__contenido--titulo;
@@ -943,9 +950,15 @@ label {
         justify-content: center;
         align-items: center; }
       .blog_main__contenido--copy {
-        grid-area: blog_main__contenido--copy; }
+        grid-area: blog_main__contenido--copy;
+        justify-self: center;
+        align-self: center; }
+        .blog_main__contenido--copy h2 {
+          text-align: center; }
       .blog_main__contenido--ilustracion {
-        grid-area: blog_main__contenido--ilustracion; }
+        grid-area: blog_main__contenido--ilustracion;
+        justify-self: center;
+        align-self: center; }
   .blog_footer {
     grid-area: blog_footer;
     display: grid;
