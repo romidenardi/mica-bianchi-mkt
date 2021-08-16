@@ -292,7 +292,7 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .index_branding__contenido {
       display: flex;
@@ -384,14 +384,15 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .index_branding__contenido {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-top: -50px; }
   .index_about_quienSoy {
     grid-area: index_about_quienSoy;
     display: grid;
@@ -471,7 +472,7 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .servicios_inicio__contenido {
       display: flex;
@@ -576,14 +577,17 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px; }
     .servicios_inicio__contenido {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center; }
+      .servicios_inicio__contenido .copy_cabeceras {
+        margin: 0 500px 0 500px; }
   .servicios_bajada {
     grid-area: servicios_bajada; }
   .servicios_agenda {
@@ -677,7 +681,7 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
@@ -733,8 +737,9 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px; }
     .contacto_main__contenido {
       display: grid;
       grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo" ". contacto_main__contenido--ilustracion contacto_main__contenido--copy .";
@@ -789,7 +794,7 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .recursos_main__contenido {
       display: flex;
@@ -834,14 +839,17 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px; }
     .recursos_main__contenido {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center; }
+      .recursos_main__contenido .copy_cabeceras {
+        margin: 0 500px 0 500px; }
   .recursos_bajada {
     grid-area: recursos_bajada;
     display: flex;
@@ -875,7 +883,7 @@ label {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; }
     .blog_main__contenido {
       display: grid;
