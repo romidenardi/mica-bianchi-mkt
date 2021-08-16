@@ -1,6 +1,9 @@
+//Envío mail de contacto//
+
 document.getElementById('contact-form').addEventListener("submit", submitForm);
 
 function submitForm(e) {
+
     e.preventDefault();
 
     let nombre = document.getElementById('nombre').value;
@@ -25,6 +28,9 @@ function sendEmail(nombre, email, marca, webMarca, residencia, conocecimiento, c
         To: "diedileon@gmail.com",
         From: "diedileon@gmail.com",
         Subject: `${nombre} te quiere contactar.`,
-        Body: `Nombre: ${nombre} <br/> Email: ${email} <br/> Nombre de la marca: ${marca} <br/> Web de la marca: ${webMarca} <br/> Residencia: ${residencia} <br/> Te conoce por: ${conocecimiento} <br/> Consultoría seleccionada: ${consultoriaSeleccionada} <br/> Consulta/Mensaje: ${consulta}` 
+        Body: `Nombre: ${nombre} <br/> Email: ${email} <br/> Nombre de la marca: ${marca} <br/> Web de la marca: ${webMarca} <br/> Residencia: ${residencia} <br/> Te conoce por: ${conocecimiento} <br/> Consultoría seleccionada: ${consultoriaSeleccionada} <br/> Consulta/Mensaje: ${consulta}`
+    }).then((email) => {
+        alert('Tu solicitud de contacto fue enviada con éxito!')
+        document.location.href = '../index.html'
     })
 }

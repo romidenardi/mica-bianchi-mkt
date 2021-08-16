@@ -11,6 +11,10 @@
   .margen-ancho-costados {
     margin: 20px 120px 20px 120px; } }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-weight: bold; }
+
 .margen40 {
   margin: 40px; }
 
@@ -179,6 +183,22 @@ label {
 .button_verde:hover {
   color: #fff; }
 
+@media (max-width: 480px) {
+  .button_verde {
+    background-color: #3C5946;
+    color: #F8E7E7;
+    border-radius: 5px;
+    font-family: "Averia Libre", cursive;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 3px 12px 3px 12px; }
+  .button_verde:hover {
+    color: #fff; }
+  .subtitulo_numero {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    color: #2B292C; } }
+
 .button_amarillo {
   background-color: #EBA94C;
   color: #3C5946;
@@ -289,14 +309,19 @@ label {
   .index_about_pilares {
     grid-area: index_about_pilares;
     display: grid;
-    grid-template-areas: "index_about_pilares__titulo index_about_pilares__titulo" "index_about_pilares__grafico index_about_pilares__copy";
+    grid-template-areas: "index_about_pilares__titulo index_about_pilares__titulo" "index_about_pilares__copy index_about_pilares__copy";
     grid-template-columns: 40% 60%; }
     .index_about_pilares__titulo {
       grid-area: index_about_pilares__titulo; }
     .index_about_pilares__copy {
-      grid-area: index_about_pilares__copy; }
+      grid-area: index_about_pilares__copy;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
     .index_about_pilares__grafico {
-      grid-area: index_about_pilares__grafico; }
+      display: none; }
   .index_about_proposito {
     grid-area: index_about_proposito;
     display: grid;
@@ -332,7 +357,7 @@ label {
       justify-content: space-around;
       align-items: center; }
       .footer__datos--logo {
-        width: 40%; }
+        width: 30%; }
       .footer__datos--contacto {
         display: flex;
         flex-direction: column;
@@ -462,7 +487,7 @@ label {
     .servicios_agenda__copy {
       grid-area: servicios_agenda__copy;
       display: grid;
-      grid-template-areas: "servicios_agenda__copy--uno"  "servicios_agenda__copy--dos"  "servicios_agenda__copy--tres";
+      grid-template-areas: "servicios_agenda__copy--uno" "servicios_agenda__copy--dos" "servicios_agenda__copy--tres";
       grid-template-columns: 100%; }
       .servicios_agenda__copy--uno {
         grid-area: servicios_agenda__copy--uno; }
@@ -524,7 +549,7 @@ label {
       justify-content: space-around;
       align-items: center; }
       .servicios_footer__datos--logo {
-        width: 40%; }
+        width: 30%; }
       .servicios_footer__datos--contacto {
         display: flex;
         flex-direction: column;
@@ -650,15 +675,17 @@ label {
     align-items: center; }
     .contacto_main__contenido {
       display: grid;
-      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--ilustracion contacto_main__contenido--copy" "contacto_main__contenido--ilustracion contacto_main__contenido--copy";
+      grid-template-areas: "contacto_main__contenido--titulo contacto_main__contenido--titulo" "contacto_main__contenido--copy contacto_main__contenido--copy";
       grid-template-columns: 30% 70%;
       grid-template-rows: 40% 60%; }
       .contacto_main__contenido--titulo {
         grid-area: contacto_main__contenido--titulo; }
       .contacto_main__contenido--copy {
         grid-area: contacto_main__contenido--copy; }
+        .contacto_main__contenido--copy p {
+          font-size: 1.3rem; }
       .contacto_main__contenido--ilustracion {
-        grid-area: contacto_main__contenido--ilustracion; }
+        display: none; }
   .contacto_formulario {
     grid-area: contacto_formulario; }
   .contacto_footer {
@@ -681,7 +708,7 @@ label {
       justify-content: space-around;
       align-items: center; }
       .contacto_footer__datos--logo {
-        width: 40%; }
+        width: 30%; }
       .contacto_footer__datos--contacto {
         display: flex;
         flex-direction: column;
@@ -778,7 +805,7 @@ label {
       justify-content: space-around;
       align-items: center; }
       .recursos_footer__datos--logo {
-        width: 40%; }
+        width: 30%; }
       .recursos_footer__datos--contacto {
         display: flex;
         flex-direction: column;
@@ -844,7 +871,7 @@ label {
     align-items: center; }
     .blog_main__contenido {
       display: grid;
-      grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo" "blog_main__contenido--copy blog_main__contenido--ilustracion" "blog_main__contenido--copy blog_main__contenido--ilustracion";
+      grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo" "blog_main__contenido--copy blog_main__contenido--copy";
       grid-template-columns: 70% 30%;
       grid-template-rows: 60% 40%; }
       .blog_main__contenido--titulo {
@@ -856,8 +883,10 @@ label {
         align-items: center; }
       .blog_main__contenido--copy {
         grid-area: blog_main__contenido--copy; }
+        .blog_main__contenido--copy h2 {
+          font-size: 2rem; }
       .blog_main__contenido--ilustracion {
-        grid-area: blog_main__contenido--ilustracion; }
+        display: none; }
   .blog_footer {
     grid-area: blog_footer;
     display: grid;
@@ -878,7 +907,7 @@ label {
       justify-content: space-around;
       align-items: center; }
       .blog_footer__datos--logo {
-        width: 40%; }
+        width: 30%; }
       .blog_footer__datos--contacto {
         display: flex;
         flex-direction: column;
@@ -904,14 +933,14 @@ label {
     .blog_main__contenido {
       display: grid;
       grid-template-areas: "blog_main__contenido--titulo blog_main__contenido--titulo" "blog_main__contenido--copy blog_main__contenido--ilustracion" "blog_main__contenido--copy blog_main__contenido--ilustracion";
-      grid-template-columns: 70% 30%;
+      grid-template-columns: 50% 50%;
       grid-template-rows: 60% 40%; }
       .blog_main__contenido--titulo {
         grid-area: blog_main__contenido--titulo;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center; }
       .blog_main__contenido--copy {
         grid-area: blog_main__contenido--copy; }
