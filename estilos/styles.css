@@ -255,7 +255,9 @@ label {
   float: left; }
 
 .contacto_main__contenido {
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .recursos_main__foto {
   position: relative;
@@ -271,7 +273,9 @@ label {
   float: left; }
 
 .blog_main__contenido {
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .form {
   display: flex;
