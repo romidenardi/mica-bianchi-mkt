@@ -256,7 +256,7 @@ label {
 
 .contacto_main__contenido {
   position: absolute;
-  top: 0;
+  left: 0;
   right: 0; }
 
 .recursos_main__foto {
@@ -274,7 +274,7 @@ label {
 
 .blog_main__contenido {
   position: absolute;
-  top: 0;
+  left: 0;
   right: 0; }
 
 .form {
