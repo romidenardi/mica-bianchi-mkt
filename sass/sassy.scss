@@ -1209,7 +1209,7 @@ label {
             grid-template-areas:
                 "contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo contacto_main__contenido--titulo"
                 ". contacto_main__contenido--ilustracion contacto_main__contenido--copy .";
-            grid-template-columns: 15% 15% 60% 10%;
+            grid-template-columns: 15% 20% 50% 15%;
             grid-template-rows: 40% 60%;
 
             &--titulo {
